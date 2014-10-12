@@ -3,5 +3,5 @@ PowerCons$Date <- paste(PowerCons$Date, PowerCons$Time, sep = " ")
 PowerCons$Date <- strptime(PowerCons$Date, format="%d/%m/%Y %H:%M:%S")
 
 png("plot2.png", width = 480, height = 480)
-with(PowerCons, plot(Date, Global_active_power, type="l", ylab = "Global Active Power (kilowatts)"))
+with(PowerCons, plot(Date, Global_active_power, type="l", ylab = "Global Active Power (kilowatts)", xlab=""))
 dev.off()
